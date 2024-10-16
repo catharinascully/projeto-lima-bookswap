@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>BookSwap</title>
+</head>
+<body>  
+    <header>
+        <div class="logo">
+            <img src="img/logo bookswap.png" alt="Logo" />
+        </div>
+        <div class="search-container">
+            <input type="text" placeholder="Pesquisar" class="search-bar">
+            <span class="search-icon">🔍</span>
+        </div>
+        <div class="auth-buttons">
+            <button class="discover-btn" onclick="toggleDropdown()">Descobrir</button>
+            <div class="dropdown" id="dropdownMenu">
+                <ul>
+                    <li>Livros</li>
+                    <li>Autores</li>
+                    <li>Editoras</li>
+                    <li>Leitores</li>
+                    <li>Trocas</li>
+                </ul>
+            </div>
+            <a href="cadastro.html">
+            <button class="signup-btn">Cadastrar</button>
+            </a>
+            <a href="login.html">
+            <button class="login-btn">Entrar</button>
+            </a>
+            </div>
+        </div>
+    </header>
+ 
+    <script>
+        function toggleDropdown() {
+            const dropdown = document.getElementById("dropdownMenu");
+            dropdown.classList.toggle("show");
+        }
+    </script>
+ 
+ <div class="img-home">
+    <img src="img/imagem.png" alt="imagem" />
+</div>
+
+<br>
+<div class="novidades-container">
+    <div class="novidades-title">Novidades do Catálogo</div>
+    <div class="novidades-images">
+        <button class="arrow left-arrow">◀</button>
+        <div class="images-flex">
+            <img src="img/imagem1.png" alt="Imagem 1" class="novidade-image" onclick="imagemClicada('imagem1.png')">
+            <img src="img/imagem2.png" alt="Imagem 2" class="novidade-image" onclick="imagemClicada('imagem2.png')">
+            <img src="img/imagem3.png" alt="Imagem 3" class="novidade-image" onclick="imagemClicada('imagem3.png')">
+            <img src="img/imagem4.png" alt="Imagem 4" class="novidade-image" onclick="imagemClicada('imagem4.png')">
+            <img src="img/imagem5.png" alt="Imagem 5" class="novidade-image" onclick="imagemClicada('imagem5.png')">
+            <img src="img/imagem11.png" alt="Imagem 6" class="novidade-image" onclick="imagemClicada('imagem6.png')">
+            <img src="img/imagem7.png" alt="Imagem 7" class="novidade-image" onclick="imagemClicada('imagem7.png')">
+            <img src="img/imagem8.png" alt="Imagem 8" class="novidade-image" onclick="imagemClicada('imagem8.png')">
+            <img src="img/imagem9.png" alt="Imagem 9" class="novidade-image" onclick="imagemClicada('imagem9.png')">
+            <img src="img/imagem10.png" alt="Imagem 10" class="novidade-image" onclick="imagemClicada('imagem10.png')">
+            <img src="img/imagem11.png" alt="Imagem 11" class="novidade-image" onclick="imagemClicada('imagem11.png')">
+        </div>            
+        <button class="arrow right-arrow">▶</button>
+    </div>
+</div>
+
+<br>
+<div class="editoras-container">
+    <div class="editoras-title">Editoras Recomendadas</div>
+    <div class="editoras-content">
+        <div class="editoras-images">
+            <button class="arrow left-arrow">◀</button>
+            <div class="images-flex3">
+                <img src="img/editoras1.png" alt="Editora 1" class="editoras-image" onclick="imagemClicada('editoras1.png')">
+                <img src="img/editoras2.png" alt="Editora 2" class="editoras-image" onclick="imagemClicada('editoras2.png')">
+                <img src="img/editoras3.png" alt="Editora 3" class="editoras-image" onclick="imagemClicada('editoras3.png')">
+                <img src="img/editoras4.png" alt="Editora 4" class="editoras-image" onclick="imagemClicada('editoras4.png')">
+                <img src="img/editoras5.png" alt="Editora 5" class="editoras-image" onclick="imagemClicada('editoras5.png')">
+            </div>
+            <button class="arrow right-arrow">▶</button>
+        </div>
+    </div>
+</div>
+
+<br>
+<div class="troca-livros-container">
+    <div class="troca-livros-title">Troca de Livros</div>
+    <div class="troca-livros-content">
+        <div class="troca-livros-images">
+            <button class="arrow left-arrow">◀</button>
+            <div class="images-flex2">
+                <img src="img/imagem3.png" alt="Troca 1" class="troca-image" onclick="imagemClicada('troca1.png')">
+                <img src="img/imagem6.png" alt="Troca 2" class="troca-image" onclick="imagemClicada('troca2.png')">
+                <img src="img/imagem8.png" alt="Troca 3" class="troca-image" onclick="imagemClicada('troca3.png')">
+                <img src="img/imagem11.pngw" alt="Troca 4" class="troca-image" onclick="imagemClicada('troca4.png')">
+                <img src="img/imagem1.png" alt="Troca 5" class="troca-image" onclick="imagemClicada('troca4.png')">
+               
+            </div>
+            <button class="arrow right-arrow">▶</button>
+        </div>
+    </div>
+    <div class="sidebar-container">
+        <img src="img/propaganda.jpg" alt="Imagem Lateral" class="sidebar-image">
+    </div>
+</div>
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-logo">
+            <img src="img/logo bookswap.png" alt="Logo" />
+        </div>
+        <div class="footer-text">
+            Somos uma rede de troca e venda de livros totalmente brasileira. <br>
+            Venha já pegar o seu livro com a gente.
+        </div>
+        <div class="social-media">
+            <img src="img/image_29-removebg-preview.png" alt="WhatsApp" class="social-icon">
+            <img src="img/image_31-removebg-preview.png" alt="Instagram" class="social-icon">
+            <img src="img/image_32-removebg-preview.png" alt="LinkedIn" class="social-icon">
+            <img src="img/logoinsta-removebg-preview.png" alt="Instagram" class="social-icon">
+        </div>
+        <div class="footer-links">
+            <ul>
+                <li>FAQ</li>
+                <li>Informações sobre a equipe</li>
+                <li>Contato</li>
+                <li>Downloads</li>
+            </ul>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
